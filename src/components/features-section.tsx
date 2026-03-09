@@ -3,51 +3,51 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Управляй ракетой",
+    description: "Запускай ракету и уворачивайся от препятствий — простое и засасывающее управление одним пальцем.",
+    icon: "rocket",
+    badge: "Игра",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Режим потока",
+    description: "Монотонная механика игры вводит мозг в медитативное состояние потока — стресс уходит сам собой.",
+    icon: "wave",
+    badge: "Релакс",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
+    title: "Атмосферный саундтрек",
+    description: "Лоу-фай биты и ambient-звуки создают идеальный фон для расслабления во время игры.",
+    icon: "music",
+    badge: "Звук",
+  },
+  {
+    title: "Без давления",
+    description: "Никаких жизней, никаких штрафов, никаких таймеров. Просто лети сколько хочешь.",
+    icon: "heart",
+    badge: "Без стресса",
+  },
+  {
+    title: "Ежедневный чил",
+    description: "5 минут с RocketChill снижают уровень кортизола и перезагружают голову между рабочими задачами.",
+    icon: "timer",
+    badge: "5 минут",
+  },
+  {
+    title: "Работает везде",
+    description: "Открывай в браузере — на ноутбуке, телефоне или планшете. Никаких установок и регистраций.",
     icon: "globe",
-    badge: "Точность",
-  },
-  {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
-  },
-  {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
-  },
-  {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    badge: "Везде",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="features" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Почему это работает</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Игра как инструмент релаксации — не развлечение, а осознанный перерыв
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "rocket" && "🚀"}
+                    {feature.icon === "wave" && "🌊"}
+                    {feature.icon === "music" && "🎵"}
+                    {feature.icon === "heart" && "💜"}
+                    {feature.icon === "timer" && "⏱️"}
+                    {feature.icon === "globe" && "🌐"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
